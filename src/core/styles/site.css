@@ -112,6 +112,7 @@ h1, h2, h3 { font-weight: 400; margin: 0; }
 .media-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, #000000c0, transparent 55%); pointer-events: none; }
 .media-card:has(.media-frame)::after { display: none; }
 .media-frame { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.media-video { object-fit: contain; background: #000; }
 .play {
   position: absolute; z-index: 2; top: 50%; left: 50%; transform: translate(-50%, -50%);
   width: 72px; height: 72px; border-radius: 50%; border: 1px solid #f0eae0b0;
@@ -125,6 +126,7 @@ h1, h2, h3 { font-weight: 400; margin: 0; }
   .media { padding: 92px 0 112px; }
   .section-head { flex-direction: row; justify-content: space-between; align-items: flex-end; }
   .media-grid { grid-template-columns: 1.45fr .8fr; align-items: stretch; }
+  .media-grid > :first-child { grid-row: span 2; }
   .media-card, .media-card.secondary { aspect-ratio: auto; min-height: 460px; }
   .media-card .focal-image { object-position: var(--focal-d); }
 }

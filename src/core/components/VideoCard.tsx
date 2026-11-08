@@ -13,7 +13,17 @@ export function VideoCard({ video, sizes, large = false }: { video: PerformanceV
 
   return (
     <div className={`media-card${large ? '' : ' secondary'}`}>
-      {playing ? (
+      {playing && video.src ? (
+        <video
+          className="media-frame media-video"
+          src={video.src}
+          controls
+          autoPlay
+          playsInline
+          preload="none"
+          aria-label={`${video.title} — video`}
+        />
+      ) : playing && video.youtubeId ? (
         <iframe
           className="media-frame"
           title={`${video.title} — video`}

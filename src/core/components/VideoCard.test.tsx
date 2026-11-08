@@ -20,4 +20,15 @@ describe('VideoCard', () => {
     render(<VideoCard video={video} sizes="100vw" large />)
     expect(screen.getByAltText(video.poster.alt)).toBeInTheDocument()
   })
+
+  it('plays a self-hosted video only after a click, with no preload', async () => {
+    const own = tracySmith.performances.items.find((v) => v.src)!
+    const { container } = render(<VideoCard video={own} sizes="100vw" />)
+    expect(container.querySelector('video')).toBeNull()
+    await userEvent.click(screen.getByRole('button', { name: /play video/i }))
+    const el = container.querySelector('video')!
+    expect(el.getAttribute('src')).toBe(own.src)
+    expect(el.getAttribute('preload')).toBe('none')
+    expect(container.querySelector('iframe')).toBeNull()
+  })
 })

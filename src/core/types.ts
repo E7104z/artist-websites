@@ -35,7 +35,9 @@ export interface ThemeColors {
 export interface PerformanceVideo {
   id: string
   /** YouTube video ID (played through youtube-nocookie.com after an explicit click). */
-  youtubeId: string
+  youtubeId?: string
+  /** Self-hosted MP4 (used when there is no youtubeId). Never preloaded. */
+  src?: string
   kicker: string
   title: string
   poster: ImageSet
