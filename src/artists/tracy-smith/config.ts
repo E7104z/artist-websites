@@ -28,12 +28,12 @@ export const tracySmith: ArtistSite = {
       'Soulful. Versatile. Unforgettable. Live music for the moments that deserve more than ordinary.',
     image: {
       base: '/artists/tracy-smith/hero-portrait',
-      widths: [432],
-      width: 432,
-      height: 768,
-      alt: 'Tracy Smith singing into a microphone on stage with a live band behind her',
-      // Face sits about 43% across and 26% down the frame.
-      focal: { mobile: { x: 44, y: 24 }, desktop: { x: 44, y: 30 } },
+      widths: [480, 768, 1200, 1206],
+      width: 1206,
+      height: 1801,
+      alt: 'Tracy Smith singing into a microphone on stage',
+      // Face sits about 47% across and 14% down the frame.
+      focal: { mobile: { x: 47, y: 14 }, desktop: { x: 47, y: 18 } },
     },
   },
   about: {

@@ -55,7 +55,7 @@ h1, h2, h3 { font-weight: 400; margin: 0; }
 
 /* ───────── Hero (mobile first: face-led image, name beneath) ───────── */
 .hero { position: relative; background: var(--stage); color: var(--ivory); overflow: hidden; }
-.hero-visual { position: relative; height: min(68svh, 560px); min-height: 400px; }
+.hero-visual { position: relative; margin-top: 77px; height: min(64svh, 540px); min-height: 400px; }
 .hero-visual::after {
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(0deg, var(--stage) 0%, transparent 38%), linear-gradient(180deg, #17151499 0%, transparent 22%);
@@ -75,7 +75,7 @@ h1, h2, h3 { font-weight: 400; margin: 0; }
   .nav-inner { height: 84px; }
   .menu-link { display: inline-block; }
   .hero { min-height: 800px; display: grid; }
-  .hero-visual { position: absolute; inset: 0 0 0 auto; width: 48%; height: auto; min-height: 0; }
+  .hero-visual { position: absolute; inset: 85px 0 0 auto; margin-top: 0; width: 48%; height: auto; min-height: 0; }
   .hero-visual::after {
     background: linear-gradient(90deg, var(--stage) 0%, transparent 30%), linear-gradient(0deg, var(--stage) 0%, transparent 20%);
   }
