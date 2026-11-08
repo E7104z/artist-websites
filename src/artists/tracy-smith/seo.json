@@ -1,0 +1,12 @@
+{
+  "title": "Tracy Smith | Live Vocalist & Entertainer — St. Louis",
+  "description": "Tracy Smith is a St. Louis live vocalist performing soul, jazz, gospel, R&B and timeless favorites. Inquire about booking Tracy for your event.",
+  "ogImage": "/artists/tracy-smith/hero-portrait-432.webp",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tracy Smith",
+    "jobTitle": "Vocalist",
+    "description": "St. Louis live vocalist performing soul, jazz, gospel and R&B."
+  }
+}

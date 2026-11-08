@@ -1,0 +1,16 @@
+:root {
+  /* Overwritten per artist by applyTheme(); these are the Tracy Smith defaults. */
+  --stage: #171514;
+  --ivory: #f0eae0;
+  --copper: #b79073;
+  --walnut: #665049;
+  --sand: #e3d7ca;
+  --night: #241f1c;
+
+  --ink-soft: #5a504a;       /* body text on ivory/sand: AA */
+  --line-light: #cfc3b8;
+  --field-border: #7a6a5e;   /* 3:1+ against sand */
+
+  --serif: 'Playfair Display Variable', 'Playfair Display', Georgia, serif;
+  --sans: 'DM Sans Variable', 'DM Sans', Arial, sans-serif;
+}
