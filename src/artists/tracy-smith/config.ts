@@ -74,20 +74,6 @@ export const tracySmith: ArtistSite = {
           focal: { mobile: { x: 44, y: 24 }, desktop: { x: 44, y: 24 } },
         },
       },
-      {
-        id: 'showroom',
-        src: '/artists/tracy-smith/video/performance-3.mp4',
-        kicker: 'Live in the room',
-        title: 'A full song, front of house',
-        poster: {
-          base: '/artists/tracy-smith/performance3',
-          widths: [476],
-          width: 476,
-          height: 420,
-          alt: 'Tracy Smith singing live in a St. Louis showroom',
-          focal: { mobile: { x: 50, y: 50 }, desktop: { x: 50, y: 50 } },
-        },
-      },
     ],
   },
   experience: {

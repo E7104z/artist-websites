@@ -55,4 +55,4 @@ Set the env vars above, add the domain, and add the site origin to `ALLOWED_ORIG
 
 ## Known gaps
 
-Hero portrait is an upscaled video frame (replace with a professional photo); video posters are unverified against the YouTube ids; a third video (IMG_2741) is not yet added; acknowledgement emails and manager notifications are tracked in AgencyOS as unfinished. The E2E tests mock the endpoint; a run against the real function on the AgencyOS emulator is still to do.
+Hero portrait is an upscaled video frame (replace with a professional photo); video posters are unverified against the YouTube ids; acknowledgement emails and manager notifications are tracked in AgencyOS as unfinished. The E2E tests mock the endpoint; a run against the real function on the AgencyOS emulator is still to do.

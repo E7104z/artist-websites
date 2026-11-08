@@ -22,7 +22,7 @@ describe('VideoCard', () => {
   })
 
   it('plays a self-hosted video only after a click, with no preload', async () => {
-    const own = tracySmith.performances.items.find((v) => v.src)!
+    const own = { ...video, youtubeId: undefined, src: '/artists/test/video.mp4' }
     const { container } = render(<VideoCard video={own} sizes="100vw" />)
     expect(container.querySelector('video')).toBeNull()
     await userEvent.click(screen.getByRole('button', { name: /play video/i }))
