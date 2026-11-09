@@ -74,10 +74,11 @@ export default defineConfig(({ mode }) => {
     plugins: [react(), artistSeo(slug)],
     resolve: { alias: { '@': path.resolve(__dirname, './src') } },
     server: { port: 5174, strictPort: true },
+    root: path.resolve(__dirname),
     test: {
       globals: true,
       environment: 'jsdom',
-      setupFiles: ['./src/test/setup.ts'],
+      setupFiles: [path.resolve(__dirname, './src/test/setup.ts')],
       css: false,
       include: ['src/**/*.{test,spec}.{ts,tsx}'],
     },
