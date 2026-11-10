@@ -37,10 +37,15 @@ export const tracySmith: ArtistSite = {
     },
   },
   about: {
-    heading: ['More than a song.', 'A moment.'],
+    heading: ['Meet', 'Tracy Smith'],
+    tagline: 'One Voice. A World of Music. An Unforgettable Experience.',
     paragraphs: [
-      'Tracy Smith brings the depth of gospel, the warmth of soul, the elegance of jazz, and the spirit of R&B to every stage. Whether backed by an intimate piano or a full live ensemble, her performances are shaped around the people in the room.',
+      'With a voice that moves effortlessly between gospel, soul, jazz, R&B, and timeless classics, Tracy Smith is more than a singer—she’s an experience. Known for her powerful vocals, magnetic stage presence, and ability to connect with audiences, Tracy brings passion, elegance, and authenticity to every performance.',
+      'A seasoned, world-traveled vocalist, Tracy’s musical journey has taken her from stages across the United States to audiences throughout Europe, the Middle East, and South America. Among her most meaningful experiences are performances entertaining American troops overseas through the U.S. Department of State, sharing the power of music with those serving far from home.',
+      'Rooted in the rich musical traditions of St. Louis, Tracy has built a career performing at concerts, churches, festivals, private celebrations, and distinguished venues. Whether delivering a soul-stirring gospel selection, an intimate jazz standard, or an electrifying R&B favorite, she has a gift for making every song—and every moment—her own.',
+      'From intimate gatherings to grand stages, Tracy Smith delivers more than exceptional music. She creates an atmosphere, connects with the audience, and leaves a lasting impression.',
     ],
+    closing: 'Experience the voice. Feel the music. Discover Tracy Smith.',
     facts: ['Based in St. Louis, Missouri', 'Soul · Jazz · Gospel · R&B'],
   },
   performances: {
@@ -119,6 +124,15 @@ export const tracySmith: ArtistSite = {
         focal: { mobile: { x: 50, y: 30 }, desktop: { x: 50, y: 30 } },
       },
       {
+        // Source: phone photo, EXIF-rotated and cropped 4:5 around the singer; brightened slightly (low light).
+        base: '/artists/tracy-smith/dark-room',
+        widths: [480, 768, 1200, 1600, 2000],
+        width: 2000,
+        height: 2500,
+        alt: 'Tracy Smith singing into a vintage-style microphone on a dark stage, with an upright bass behind her',
+        focal: { mobile: { x: 40, y: 35 }, desktop: { x: 40, y: 35 } },
+      },
+      {
         // Source: IMG_2472.PNG (transparent cut-out, trimmed and capped at 2000 px wide)
         base: '/artists/tracy-smith/studio-portrait',
         widths: [480, 768, 1200, 1600, 2000],
@@ -127,6 +141,24 @@ export const tracySmith: ArtistSite = {
         alt: 'Tracy Smith smiling, seated on a stool in a black feathered jacket and jeans',
         focal: { mobile: { x: 50, y: 50 }, desktop: { x: 50, y: 50 } },
         cutout: true,
+      },
+      {
+        // Source: video still (918 px wide), cropped head-to-hip to drop the foreground.
+        base: '/artists/tracy-smith/backyard-set',
+        widths: [480, 768, 918],
+        width: 918,
+        height: 1190,
+        alt: 'Tracy Smith in a denim jumpsuit, smiling and singing into a microphone at an outdoor party with string lights behind her',
+        focal: { mobile: { x: 50, y: 25 }, desktop: { x: 50, y: 25 } },
+      },
+      {
+        // Source: phone photo (1206 px wide), trimmed at the top only.
+        base: '/artists/tracy-smith/city-evening',
+        widths: [480, 768, 1200, 1206],
+        width: 1206,
+        height: 2115,
+        alt: 'Tracy Smith smiling in a black outfit and grey knit vest, standing beside a large glass sculpture in a warmly lit restaurant',
+        focal: { mobile: { x: 45, y: 25 }, desktop: { x: 45, y: 25 } },
       },
     ],
   },
