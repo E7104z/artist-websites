@@ -37,10 +37,15 @@ export const tracySmith: ArtistSite = {
     },
   },
   about: {
-    heading: ['More than a song.', 'A moment.'],
+    heading: ['Meet', 'Tracy Smith'],
+    tagline: 'One Voice. A World of Music. An Unforgettable Experience.',
     paragraphs: [
-      'Tracy Smith brings the depth of gospel, the warmth of soul, the elegance of jazz, and the spirit of R&B to every stage. Whether backed by an intimate piano or a full live ensemble, her performances are shaped around the people in the room.',
+      'With a voice that moves effortlessly between gospel, soul, jazz, R&B, and timeless classics, Tracy Smith is more than a singer—she’s an experience. Known for her powerful vocals, magnetic stage presence, and ability to connect with audiences, Tracy brings passion, elegance, and authenticity to every performance.',
+      'A seasoned, world-traveled vocalist, Tracy’s musical journey has taken her from stages across the United States to audiences throughout Europe, the Middle East, and South America. Among her most meaningful experiences are performances entertaining American troops overseas through the U.S. Department of State, sharing the power of music with those serving far from home.',
+      'Rooted in the rich musical traditions of St. Louis, Tracy has built a career performing at concerts, churches, festivals, private celebrations, and distinguished venues. Whether delivering a soul-stirring gospel selection, an intimate jazz standard, or an electrifying R&B favorite, she has a gift for making every song—and every moment—her own.',
+      'From intimate gatherings to grand stages, Tracy Smith delivers more than exceptional music. She creates an atmosphere, connects with the audience, and leaves a lasting impression.',
     ],
+    closing: 'Experience the voice. Feel the music. Discover Tracy Smith.',
     facts: ['Based in St. Louis, Missouri', 'Soul · Jazz · Gospel · R&B'],
   },
   performances: {

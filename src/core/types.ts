@@ -70,7 +70,11 @@ export interface ArtistSite {
   }
   about: {
     heading: [string, string]
+    /** Optional line set under the heading. */
+    tagline?: string
     paragraphs: string[]
+    /** Optional closing line, set apart after the paragraphs. */
+    closing?: string
     facts: string[]
   }
   performances: {
