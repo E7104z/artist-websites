@@ -11,6 +11,7 @@ export function SiteNav() {
         <div className="menu">
           <Link className="menu-link" to="/#about">About</Link>
           <Link className="menu-link" to="/#performances">Performances</Link>
+          {artist.gallery?.items.length ? <Link className="menu-link" to="/#gallery">Gallery</Link> : null}
           <Link className="menu-link" to="/#experience">The Experience</Link>
           <Link className="nav-cta" to="/#booking" onClick={() => track('cta_book_click', { place: 'nav' })}>
             Book {artist.name.split(' ')[0]}

@@ -1,12 +1,13 @@
 import { useArtist } from '../ArtistContext'
+import { sectionNumber } from '../lib/sectionNumber'
 
-export function ArtistStory() {
+export function ArtistStory({ num }: { num: number }) {
   const { about } = useArtist()
   return (
     <section className="intro" id="about" aria-labelledby="about-title">
       <div className="wrap intro-grid">
         <div>
-          <p className="label">01 &nbsp;/&nbsp; The Artist</p>
+          <p className="label">{sectionNumber(num)} &nbsp;/&nbsp; The Artist</p>
           <h2 id="about-title">
             {about.heading[0]}
             <br />

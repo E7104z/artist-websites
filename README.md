@@ -8,7 +8,7 @@ Booking inquiries post to the AgencyOS `submitBookingInquiry` Cloud Function (re
 
 ```
 src/core/            shared components, sections, pages, styles, booking client
-src/artists/<slug>/  config.ts (content), seo.json, approvals.json
+src/artists/<slug>/  config.ts (content incl. optional gallery), seo.json, approvals.json
 src/artists/registry.ts
 assets-src/<slug>/   original images (optimised by `npm run images`)
 scripts/             optimize-images.mjs, check-approvals.mjs
@@ -55,4 +55,4 @@ Set the env vars above, add the domain, and add the site origin to `ALLOWED_ORIG
 
 ## Known gaps
 
-video posters are unverified against the YouTube ids; acknowledgement emails and manager notifications are tracked in AgencyOS as unfinished. The E2E tests mock the endpoint; a run against the real function on the AgencyOS emulator is still to do.
+video posters are unverified against the YouTube ids; self-hosted clips (`public/artists/<slug>/*.mp4`) are served as-is by Vercel, so keep them short and H.264/AAC MP4 with faststart (remux phone .MOV files with `ffmpeg -i in.MOV -c copy -movflags +faststart out.mp4`); acknowledgement emails and manager notifications are tracked in AgencyOS as unfinished. The E2E tests mock the endpoint; a run against the real function on the AgencyOS emulator is still to do.

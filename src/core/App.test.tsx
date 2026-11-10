@@ -40,6 +40,28 @@ describe('homepage', () => {
   })
 })
 
+describe('media', () => {
+  it('lists every performance video, including the self-hosted clips', () => {
+    renderAt('/')
+    for (const v of tracySmith.performances.items) {
+      expect(screen.getByRole('button', { name: `Play video: ${v.title}` })).toBeInTheDocument()
+    }
+    expect(tracySmith.performances.items.filter((v) => v.src)).toHaveLength(2)
+  })
+
+  it('shows the gallery with a nav link and numbers sections without gaps', () => {
+    renderAt('/')
+    const gallery = document.getElementById('gallery')!
+    for (const photo of tracySmith.gallery!.items) {
+      expect(within(gallery).getByAltText(photo.alt)).toBeInTheDocument()
+    }
+    expect(within(screen.getByRole('navigation', { name: 'Main' })).getByRole('link', { name: 'Gallery' })).toBeInTheDocument()
+    const labels = [...document.querySelectorAll('main section .label, section .label')]
+      .map((el) => el.textContent!.slice(0, 2))
+    expect([...new Set(labels)]).toEqual(['01', '02', '03', '04', '05'])
+  })
+})
+
 describe('routes', () => {
   it.each([['/book', /let’s make it memorable/i], ['/privacy', /privacy notice/i], ['/nope', /isn’t here/i]])(
     '%s renders', (path, text) => {

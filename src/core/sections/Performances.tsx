@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import { useArtist } from '../ArtistContext'
+import { sectionNumber } from '../lib/sectionNumber'
 import { VideoCard } from '../components/VideoCard'
 import { track } from '../lib/analytics'
 
-export function Performances() {
+export function Performances({ num }: { num: number }) {
   const { performances, name } = useArtist()
   const first = name.split(' ')[0]
   return (
@@ -11,7 +12,7 @@ export function Performances() {
       <div className="wrap">
         <div className="section-head">
           <div>
-            <p className="label">02 &nbsp;/&nbsp; In Performance</p>
+            <p className="label">{sectionNumber(num)} &nbsp;/&nbsp; In Performance</p>
             <h2 id="performances-title">{performances.heading}</h2>
           </div>
           <Link className="text-link" to="/#booking" onClick={() => track('cta_book_click', { place: 'performances' })}>

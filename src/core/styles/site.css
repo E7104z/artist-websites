@@ -105,8 +105,12 @@ h1, h2, h3 { font-weight: 400; margin: 0; }
 .media h2 { margin-bottom: 0; }
 .section-head { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; margin-bottom: 40px; }
 .media-grid { display: grid; gap: 20px; }
-.media-card { position: relative; overflow: hidden; background: #302821; aspect-ratio: 16 / 10; }
+.media-card { position: relative; overflow: hidden; background: #302821; aspect-ratio: 4 / 3; }
 .media-card.secondary { aspect-ratio: 4 / 5; }
+@media (min-width: 640px) and (max-width: 899px) {
+  .media-grid { grid-template-columns: repeat(2, 1fr); }
+  .media-grid > :first-child { grid-column: 1 / -1; }
+}
 .media-card .focal-image { position: absolute; inset: 0; object-position: var(--focal-m); filter: contrast(1.04) saturate(.8) brightness(.88); transition: transform .6s ease; }
 .media-card:hover .focal-image { transform: scale(1.03); }
 .media-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, #000000c0, transparent 55%); pointer-events: none; }
@@ -125,10 +129,25 @@ h1, h2, h3 { font-weight: 400; margin: 0; }
 @media (min-width: 900px) {
   .media { padding: 92px 0 112px; }
   .section-head { flex-direction: row; justify-content: space-between; align-items: flex-end; }
-  .media-grid { grid-template-columns: 1.45fr .8fr; align-items: stretch; }
-  .media-grid > :first-child { grid-row: span 2; }
-  .media-card, .media-card.secondary { aspect-ratio: auto; min-height: 460px; }
+  /* Featured video full width, the rest as a row of portrait tiles (any count). */
+  .media-grid { grid-template-columns: repeat(3, 1fr); }
+  .media-grid > :first-child { grid-column: 1 / -1; aspect-ratio: 16 / 7.5; }
   .media-card .focal-image { object-position: var(--focal-d); }
+}
+
+/* ───────── Gallery ───────── */
+.gallery { background: var(--sand); padding: 80px 0 90px; }
+.gallery h2 { font: 400 clamp(40px, 6.2vw, 72px) / 1.1 var(--serif); letter-spacing: -.04em; margin: 14px 0 40px; }
+.gallery-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; }
+.gallery-item { aspect-ratio: 2 / 3; overflow: hidden; background: var(--night); }
+.gallery-item.cutout { background: linear-gradient(180deg, #f7f2eb, #ebe2d6); }
+.gallery-item.cutout .focal-image { object-fit: contain; }
+@media (min-width: 640px) {
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .gallery { padding: 110px 0 120px; }
+  .gallery-grid { gap: 28px; }
 }
 
 /* ───────── Experience ───────── */
