@@ -1,6 +1,11 @@
 import { useArtist } from '../ArtistContext'
 import { sectionNumber } from '../lib/sectionNumber'
 
+/** Renders **double-asterisk** phrases as <strong>; everything else stays plain text. */
+function withEmphasis(text: string) {
+  return text.split(/\*\*(.+?)\*\*/g).map((part, i) => (i % 2 ? <strong key={i}>{part}</strong> : part))
+}
+
 export function ArtistStory({ num }: { num: number }) {
   const { about } = useArtist()
   return (
@@ -17,7 +22,7 @@ export function ArtistStory({ num }: { num: number }) {
         </div>
         <div>
           {about.paragraphs.map((p) => (
-            <p key={p}>{p}</p>
+            <p key={p}>{withEmphasis(p)}</p>
           ))}
           {about.closing && <p className="intro-closing">{about.closing}</p>}
           <ul className="meta">

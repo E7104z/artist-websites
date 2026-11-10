@@ -93,6 +93,7 @@ h1, h2, h3 { font-weight: 400; margin: 0; }
   font: 400 clamp(40px, 6.2vw, 72px) / 1.1 var(--serif); letter-spacing: -.04em; margin: 14px 0 20px;
 }
 .intro h2 em { color: #7d634f; font-weight: 400; }
+.intro p strong { font-weight: 600; color: var(--stage); }
 .intro p { font-size: 17px; line-height: 1.9; color: var(--ink-soft); margin: 0 0 24px; max-width: 600px; }
 .intro-tagline { font-family: var(--serif); font-style: italic; font-size: clamp(20px, 2.4vw, 26px); line-height: 1.4; color: #7d634f; margin: 0 0 8px; max-width: 420px; padding-top: 20px; border-top: 1px solid var(--line-light); }
 .intro .intro-closing { font-family: var(--serif); font-size: clamp(22px, 2.6vw, 28px); line-height: 1.35; letter-spacing: -.01em; color: var(--stage); margin: 36px 0 0; padding-left: 18px; border-left: 2px solid var(--copper); }

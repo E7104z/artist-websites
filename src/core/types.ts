@@ -72,6 +72,7 @@ export interface ArtistSite {
     heading: [string, string]
     /** Optional line set under the heading. */
     tagline?: string
+    /** Plain text; wrap a phrase in **double asterisks** to bold it. */
     paragraphs: string[]
     /** Optional closing line, set apart after the paragraphs. */
     closing?: string
