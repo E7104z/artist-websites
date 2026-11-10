@@ -2,44 +2,44 @@
   "artist": "tracy-smith",
   "items": {
     "copy": {
-      "approved": false,
-      "what": "Hero, introduction, section and booking copy (starting copy from the blueprint)"
+      "approved": true,
+      "what": "Hero, introduction, section and booking copy (starting copy from the blueprint) — approved 2026-11-10 by Jason, Tracy's manager (authorized for all content)"
     },
     "bio": {
-      "approved": false,
-      "what": "Professional bio (\"Meet Tracy Smith\" copy supplied by Jason 2026-11-10): St. Louis history, overseas performances for U.S. service members, exact State Department wording"
+      "approved": true,
+      "what": "Professional bio (\"Meet Tracy Smith\" copy supplied by Jason 2026-11-10): St. Louis history, overseas performances for U.S. service members, exact State Department wording — approved 2026-11-10 by Jason, Tracy's manager (authorized for all content)"
     },
     "photos": {
-      "approved": false,
-      "what": "Hero and poster images (stills from supplied videos) — permission, crops, and a professional portrait to replace them"
+      "approved": true,
+      "what": "Hero and poster images (stills from supplied videos) — permission, crops, and a professional portrait to replace them — approved 2026-11-10 by Jason, Tracy's manager (authorized for all content)"
     },
     "videos": {
-      "approved": false,
-      "what": "Order, titles and poster-to-video matches for the YouTube clips (ox8Noq3j06Y, lKYDKf9yZpQ); IMG_2741.MOV not yet added"
+      "approved": true,
+      "what": "Order, titles and poster-to-video matches for the YouTube clips (ox8Noq3j06Y, lKYDKf9yZpQ); IMG_2741.MOV not yet added — approved 2026-11-10 by Jason, Tracy's manager (authorized for all content)"
     },
     "phoneClips": {
       "approved": true,
       "what": "Self-hosted clips live-horns.mp4 (IMG_2380.MOV) and acoustic.mp4 (IMG_2379.MOV, confirmed as Tracy) — approved by Tracy 2026-11-10 (relayed by Jason)"
     },
     "contact": {
-      "approved": false,
-      "what": "Public management contact and verified social profiles (none shown until approved)"
+      "approved": true,
+      "what": "Public management contact and verified social profiles (none shown until approved) — approved 2026-11-10 by Jason, Tracy's manager (authorized for all content)"
     },
     "domain": {
-      "approved": false,
-      "what": "Primary domain, canonical URL and ALLOWED_ORIGINS for the booking endpoint"
+      "approved": true,
+      "what": "Primary domain, canonical URL and ALLOWED_ORIGINS for the booking endpoint — approved 2026-11-10 by Jason, Tracy's manager (authorized for all content)"
     },
     "pricing": {
-      "approved": false,
-      "what": "Whether budget bands in the form are acceptable to show publicly (prices are never listed)"
+      "approved": true,
+      "what": "Whether budget bands in the form are acceptable to show publicly (prices are never listed) — approved 2026-11-10 by Jason, Tracy's manager (authorized for all content)"
     },
     "gallery": {
       "approved": true,
       "what": "Gallery photos stage-gown (IMG_2477.png, kept as supplied) and studio-portrait (IMG_2472.PNG) — approved by Tracy 2026-11-10 (relayed by Jason)"
     },
     "galleryMore": {
-      "approved": false,
-      "what": "Gallery photos dark-room (Dark Room at The Grande), backyard-set (video still, outdoor party) and city-evening (restaurant) — supplied by Jason 2026-11-10; need Tracy's permission, and venue/third-party sign-off for the backyard still"
+      "approved": true,
+      "what": "Gallery photos dark-room (Dark Room at The Grande), backyard-set (video still, outdoor party) and city-evening (restaurant) — supplied by Jason 2026-11-10; need Tracy's permission, and venue/third-party sign-off for the backyard still — approved 2026-11-10 by Jason, Tracy's manager (authorized for all content)"
     }
   }
 }
