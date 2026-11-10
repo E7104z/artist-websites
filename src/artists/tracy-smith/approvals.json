@@ -36,6 +36,10 @@
     "gallery": {
       "approved": true,
       "what": "Gallery photos stage-gown (IMG_2477.png, kept as supplied) and studio-portrait (IMG_2472.PNG) — approved by Tracy 2026-11-10 (relayed by Jason)"
+    },
+    "galleryMore": {
+      "approved": false,
+      "what": "Gallery photos dark-room (Dark Room at The Grande), backyard-set (video still, outdoor party) and city-evening (restaurant) — supplied by Jason 2026-11-10; need Tracy's permission, and venue/third-party sign-off for the backyard still"
     }
   }
 }
