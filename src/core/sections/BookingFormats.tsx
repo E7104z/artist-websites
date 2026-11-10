@@ -1,12 +1,13 @@
 import { useArtist } from '../ArtistContext'
+import { sectionNumber } from '../lib/sectionNumber'
 
-export function BookingFormats() {
+export function BookingFormats({ num }: { num: number }) {
   const { experience } = useArtist()
   return (
     <section className="experience" id="experience" aria-labelledby="experience-title">
       <div className="wrap experience-grid">
         <div>
-          <p className="label">03 &nbsp;/&nbsp; The Experience</p>
+          <p className="label">{sectionNumber(num)} &nbsp;/&nbsp; The Experience</p>
           <h2 id="experience-title">
             {experience.heading[0]}
             <br />

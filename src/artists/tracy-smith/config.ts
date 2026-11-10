@@ -74,6 +74,60 @@ export const tracySmith: ArtistSite = {
           focal: { mobile: { x: 44, y: 24 }, desktop: { x: 44, y: 24 } },
         },
       },
+      {
+        // Source: IMG_2380.MOV (vertical phone clip, 15 s), self-hosted.
+        id: 'live-horns',
+        src: '/artists/tracy-smith/live-horns.mp4',
+        kicker: 'On stage',
+        title: 'Live with the horn section',
+        poster: {
+          base: '/artists/tracy-smith/live-horns-poster',
+          widths: [480],
+          width: 480,
+          height: 848,
+          alt: 'Tracy Smith singing on a red-curtained stage with a live band and horn section',
+          focal: { mobile: { x: 60, y: 48 }, desktop: { x: 60, y: 48 } },
+        },
+      },
+      {
+        // Source: IMG_2379.MOV (square clip with a colour filter, 52 s), self-hosted.
+        id: 'acoustic',
+        src: '/artists/tracy-smith/acoustic.mp4',
+        kicker: 'Unplugged',
+        title: 'An acoustic moment',
+        poster: {
+          base: '/artists/tracy-smith/acoustic-poster',
+          widths: [480, 720],
+          width: 720,
+          height: 720,
+          alt: 'Tracy Smith playing acoustic guitar, filmed close up at home',
+          focal: { mobile: { x: 45, y: 30 }, desktop: { x: 45, y: 30 } },
+        },
+      },
+    ],
+  },
+  gallery: {
+    heading: 'On stage and off.',
+    items: [
+      {
+        // Source: IMG_2477.png
+        base: '/artists/tracy-smith/stage-gown',
+        widths: [480, 768, 1024],
+        width: 1024,
+        height: 1536,
+        alt: 'Tracy Smith in a black lace and tulle gown, holding a vintage microphone stand on a dimly lit stage',
+        focal: { mobile: { x: 50, y: 30 }, desktop: { x: 50, y: 30 } },
+      },
+      {
+        // Source: IMG_2472.PNG (transparent cut-out, trimmed and capped at 2000 px wide)
+        base: '/artists/tracy-smith/studio-portrait',
+        widths: [480, 768, 1200, 1600, 2000],
+        width: 2000,
+        height: 3000,
+        alt: 'Tracy Smith smiling, seated on a stool in a black feathered jacket and jeans',
+        focal: { mobile: { x: 50, y: 50 }, desktop: { x: 50, y: 50 } },
+        cutout: true,
+      },
     ],
   },
   experience: {

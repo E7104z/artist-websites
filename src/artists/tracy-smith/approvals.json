@@ -1,12 +1,41 @@
 {
   "artist": "tracy-smith",
   "items": {
-    "copy": { "approved": false, "what": "Hero, introduction, section and booking copy (starting copy from the blueprint)" },
-    "bio": { "approved": false, "what": "Professional bio, St. Louis history, overseas performances for U.S. service members, exact State Department wording" },
-    "photos": { "approved": false, "what": "Hero and poster images (stills from supplied videos) — permission, crops, and a professional portrait to replace them" },
-    "videos": { "approved": false, "what": "Order, titles and poster-to-video matches for the YouTube clips (ox8Noq3j06Y, lKYDKf9yZpQ); IMG_2741.MOV not yet added" },
-    "contact": { "approved": false, "what": "Public management contact and verified social profiles (none shown until approved)" },
-    "domain": { "approved": false, "what": "Primary domain, canonical URL and ALLOWED_ORIGINS for the booking endpoint" },
-    "pricing": { "approved": false, "what": "Whether budget bands in the form are acceptable to show publicly (prices are never listed)" }
+    "copy": {
+      "approved": false,
+      "what": "Hero, introduction, section and booking copy (starting copy from the blueprint)"
+    },
+    "bio": {
+      "approved": false,
+      "what": "Professional bio, St. Louis history, overseas performances for U.S. service members, exact State Department wording"
+    },
+    "photos": {
+      "approved": false,
+      "what": "Hero and poster images (stills from supplied videos) — permission, crops, and a professional portrait to replace them"
+    },
+    "videos": {
+      "approved": false,
+      "what": "Order, titles and poster-to-video matches for the YouTube clips (ox8Noq3j06Y, lKYDKf9yZpQ); IMG_2741.MOV not yet added"
+    },
+    "phoneClips": {
+      "approved": true,
+      "what": "Self-hosted clips live-horns.mp4 (IMG_2380.MOV) and acoustic.mp4 (IMG_2379.MOV, confirmed as Tracy) — approved by Tracy 2026-11-10 (relayed by Jason)"
+    },
+    "contact": {
+      "approved": false,
+      "what": "Public management contact and verified social profiles (none shown until approved)"
+    },
+    "domain": {
+      "approved": false,
+      "what": "Primary domain, canonical URL and ALLOWED_ORIGINS for the booking endpoint"
+    },
+    "pricing": {
+      "approved": false,
+      "what": "Whether budget bands in the form are acceptable to show publicly (prices are never listed)"
+    },
+    "gallery": {
+      "approved": true,
+      "what": "Gallery photos stage-gown (IMG_2477.png, kept as supplied) and studio-portrait (IMG_2472.PNG) — approved by Tracy 2026-11-10 (relayed by Jason)"
+    }
   }
 }

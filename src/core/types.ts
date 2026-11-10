@@ -43,6 +43,11 @@ export interface PerformanceVideo {
   poster: ImageSet
 }
 
+export interface GalleryPhoto extends ImageSet {
+  /** Transparent cut-out (e.g. studio portrait); shown on a sand backdrop instead of cropped edge to edge. */
+  cutout?: boolean
+}
+
 export interface Choice {
   value: string
   label: string
@@ -71,6 +76,11 @@ export interface ArtistSite {
   performances: {
     heading: string
     items: PerformanceVideo[]
+  }
+  /** Optional photo gallery. Omit to hide the section and its nav link. */
+  gallery?: {
+    heading: string
+    items: GalleryPhoto[]
   }
   experience: {
     heading: [string, string]
