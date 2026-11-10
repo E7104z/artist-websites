@@ -44,7 +44,11 @@ describe('media', () => {
   it('lists every performance video, including the self-hosted clips', () => {
     renderAt('/')
     for (const v of tracySmith.performances.items) {
-      expect(screen.getByRole('button', { name: `Play video: ${v.title}` })).toBeInTheDocument()
+      // Self-hosted clips are click-to-play; YouTube clips render the real player.
+      const el = v.src
+        ? screen.getByRole('button', { name: `Play video: ${v.title}` })
+        : screen.getByTitle(`${v.title} — video`)
+      expect(el).toBeInTheDocument()
     }
     expect(tracySmith.performances.items.filter((v) => v.src)).toHaveLength(2)
   })
