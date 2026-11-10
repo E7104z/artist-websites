@@ -100,7 +100,7 @@ export const tracySmith: ArtistSite = {
           widths: [480, 720],
           width: 720,
           height: 720,
-          alt: 'Acoustic guitar performance, filmed close up at home',
+          alt: 'Tracy Smith playing acoustic guitar, filmed close up at home',
           focal: { mobile: { x: 45, y: 30 }, desktop: { x: 45, y: 30 } },
         },
       },
