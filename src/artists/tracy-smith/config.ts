@@ -144,15 +144,6 @@ export const tracySmith: ArtistSite = {
         cutout: true,
       },
       {
-        // Source: video still (918 px wide), cropped head-to-hip to drop the foreground.
-        base: '/artists/tracy-smith/backyard-set',
-        widths: [480, 768, 918],
-        width: 918,
-        height: 1190,
-        alt: 'Tracy Smith in a denim jumpsuit, smiling and singing into a microphone at an outdoor party with string lights behind her',
-        focal: { mobile: { x: 50, y: 25 }, desktop: { x: 50, y: 25 } },
-      },
-      {
         // Source: phone photo (1206 px wide), trimmed at the top only.
         base: '/artists/tracy-smith/city-evening',
         widths: [480, 768, 1200, 1206],
