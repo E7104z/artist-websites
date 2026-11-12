@@ -1,7 +1,7 @@
 // Generates responsive AVIF + WebP variants from assets-src/<artist>/*.{png,jpg}
 // into public/artists/<artist>/<name>-<width>.{avif,webp}. Never upscales.
 // Pass image names (no extension) to process only those, e.g.
-//   node scripts/optimize-images.mjs dark-room backyard-set
+//   node scripts/optimize-images.mjs dark-room city-evening
 // Downscaled sizes get a light unsharp mask so they stay crisp after resampling.
 import { mkdir, readdir } from 'node:fs/promises'
 import path from 'node:path'
